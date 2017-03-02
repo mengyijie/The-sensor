@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rHS-xR-s3w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eGB-Dl-1aK">
+            <objects>
+                <navigationController id="rHS-xR-s3w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tzd-RF-Qgj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JLY-Sv-fqJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2X-zj-Ezz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="161"/>
+        </scene>
+        <!--磁性传感器-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y轴磁感应强度：-270.3013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM8-nn-oGA">
+                                <rect key="frame" x="77" y="215" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XoC-MK-Kfs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X轴磁感应强度：55.3299" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qum-Gd-WTi">
+                                <rect key="frame" x="77" y="169" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5Xu-jh-vY1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="z轴的磁感应强度：139.6234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-N7-av2">
+                                <rect key="frame" x="77" y="261" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GQZ-7o-78B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方向：东南方  角度：100.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dV-eE-iVI">
+                                <rect key="frame" x="19" y="307" width="336" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1LH-9L-Lcf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCb-eh-bB2">
+                                <rect key="frame" x="127" y="394" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7ZM-Ee-rwY"/>
+                                    <constraint firstAttribute="height" constant="120" id="ZEq-p1-k57"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="场强" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ4-CK-qzk">
+                                <rect key="frame" x="77" y="350" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="s5H-TX-eYx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmR-sI-LbZ">
+                                <rect key="frame" x="147" y="97" width="80" height="50"/>
+                                <color key="backgroundColor" red="0.97633961530000002" green="1" blue="0.60651537310000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PcY-UG-p3z"/>
+                                </constraints>
+                                <state key="normal" title="下一页">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OGq-yQ-Zcn" kind="push" id="AdC-zQ-WVi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qum-Gd-WTi" firstAttribute="top" secondItem="BmR-sI-LbZ" secondAttribute="bottom" constant="22" id="0eb-SV-Eyn"/>
+                            <constraint firstItem="GM8-nn-oGA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="19f-Bt-6Rz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GM8-nn-oGA" secondAttribute="trailing" constant="61" id="1IW-N2-2LX"/>
+                            <constraint firstItem="ozI-N7-av2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="1ca-0X-B0H"/>
+                            <constraint firstItem="AZ4-CK-qzk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="6Ow-EL-WoG"/>
+                            <constraint firstItem="AZ4-CK-qzk" firstAttribute="top" secondItem="5dV-eE-iVI" secondAttribute="bottom" constant="22" id="6p5-jm-w7h"/>
+                            <constraint firstItem="5dV-eE-iVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="G5N-aL-H0w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5dV-eE-iVI" secondAttribute="trailing" constant="4" id="LoJ-g9-hcb"/>
+                            <constraint firstItem="UCb-eh-bB2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="111" id="Pi2-Fo-9AY"/>
+                            <constraint firstItem="Qum-Gd-WTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="VPB-Re-AQb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ozI-N7-av2" secondAttribute="trailing" constant="61" id="XAz-ya-jhD"/>
+                            <constraint firstItem="5dV-eE-iVI" firstAttribute="top" secondItem="ozI-N7-av2" secondAttribute="bottom" constant="25" id="XGc-g7-nmn"/>
+                            <constraint firstItem="BmR-sI-LbZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="d9p-nY-Nkb"/>
+                            <constraint firstItem="GM8-nn-oGA" firstAttribute="top" secondItem="Qum-Gd-WTi" secondAttribute="bottom" constant="25" id="dxL-AF-C7l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AZ4-CK-qzk" secondAttribute="trailing" constant="61" id="gsX-sh-jQL"/>
+                            <constraint firstItem="ozI-N7-av2" firstAttribute="top" secondItem="GM8-nn-oGA" secondAttribute="bottom" constant="25" id="jVT-uj-ATx"/>
+                            <constraint firstItem="BmR-sI-LbZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="131" id="nRr-56-dXI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BmR-sI-LbZ" secondAttribute="trailing" constant="132" id="orW-cR-1Ni"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qum-Gd-WTi" secondAttribute="trailing" constant="61" id="stF-cS-mIq"/>
+                            <constraint firstItem="UCb-eh-bB2" firstAttribute="top" secondItem="AZ4-CK-qzk" secondAttribute="bottom" constant="23" id="zhj-n5-UeK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="磁性传感器" id="WY5-lR-MyC"/>
+                    <connections>
+                        <outlet property="ImageView" destination="UCb-eh-bB2" id="8Yr-Hr-iFA"/>
+                        <outlet property="cqLabel" destination="AZ4-CK-qzk" id="aEW-oT-IPm"/>
+                        <outlet property="fxLabel" destination="5dV-eE-iVI" id="VFu-xe-pxc"/>
+                        <outlet property="xLabel" destination="Qum-Gd-WTi" id="Fdo-fm-uPt"/>
+                        <outlet property="yLabel" destination="GM8-nn-oGA" id="WbP-GT-haN"/>
+                        <outlet property="zLabel" destination="ozI-N7-av2" id="l2B-Yp-WSC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="102.99850074962519"/>
+        </scene>
+        <!--光照-->
+        <scene sceneID="pfz-G6-kfL">
+            <objects>
+                <viewController id="OGq-yQ-Zcn" customClass="AmbientLightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zxT-j2-WFo"/>
+                        <viewControllerLayoutGuide type="bottom" id="o2B-Ui-eyk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="77t-lM-WfW" customClass="A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="光照" id="Ior-Sj-Ca7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4h-r3-10T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="114"/>
+        </scene>
+    </scenes>
+</document>
